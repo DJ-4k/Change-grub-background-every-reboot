@@ -1,0 +1,4 @@
+#!/bin/bash
+echo GRUB_BACKGROUND="/home/ak/Imágenes/grub2/"$((1 + RANDOM %30))".png" > /etc/default/grub
+cat /etc/default/grub.bk >> /etc/default/grub
+update-grub2

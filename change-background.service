@@ -1,0 +1,10 @@
+[Unit]
+Description=Cambiar background de grub
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/change_background
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
